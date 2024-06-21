@@ -20,4 +20,5 @@ public class Instantiator : MonoBehaviour
         Instantiate(bulletCloneTemplate, transform.position, transform.rotation);
         }
     }
+
 }
