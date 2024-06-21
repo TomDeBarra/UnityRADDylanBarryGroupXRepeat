@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CubeControl : MonoBehaviour
 {
+    float CubeSpeed = 20f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,22 +17,22 @@ public class CubeControl : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-        transform.position += Vector3.up * Time.deltaTime;
+        transform.position += CubeSpeed * Vector3.up * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-        transform.position += Vector3.down * Time.deltaTime;
+        transform.position += CubeSpeed * Vector3.down * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-        transform.position += Vector3.right * Time.deltaTime;
+        transform.position += CubeSpeed * Vector3.right * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-        transform.position += Vector3.left * Time.deltaTime;
+        transform.position += CubeSpeed * Vector3.left * Time.deltaTime;
         }
     }
 }
