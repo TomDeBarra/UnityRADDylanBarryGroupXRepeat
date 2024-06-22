@@ -34,5 +34,15 @@ public class CubeControl : MonoBehaviour
         {
         transform.position += CubeSpeed * Vector3.left * Time.deltaTime;
         }
+
+        if (Input.GetKey(KeyCode.W))
+        {
+        transform.position += CubeSpeed * Vector3.forward * Time.deltaTime;
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+        transform.position -= CubeSpeed * Vector3.forward * Time.deltaTime;
+        }
     }
 }
