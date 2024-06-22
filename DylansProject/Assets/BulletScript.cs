@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {   
+    public AudioSource audioPlayer;
+
     float bulletSpeed = 20f;
 
     // Start is called before the first frame update
