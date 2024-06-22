@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {   
-    public AudioSource audioPlayer;
 
     float bulletSpeed = 20f;
 

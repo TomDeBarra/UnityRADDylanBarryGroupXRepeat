@@ -5,6 +5,8 @@ using UnityEngine;
 public class HealthScript : MonoBehaviour
 {   
 
+    public AudioSource audioPlayer;
+    
     int MHP = 100;
     int CHP = 100;
 
@@ -21,7 +23,8 @@ public class HealthScript : MonoBehaviour
     }
 
     internal void takeDamage(int howMuchDamage)
-    {
+    {   
+        audioPlayer.Play();
         CHP -= howMuchDamage;
         if (CHP<=0)
         {
